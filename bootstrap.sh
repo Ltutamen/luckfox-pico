@@ -14,8 +14,8 @@ apk add agetty
 
 # Setting up shell
 apk add shadow
-apk add bash bash-completion
-chsh -s /bin/bash
+#apk add bash bash-completion
+#chsh -s /bin/bash
 echo -e "luckfox\nluckfox" | passwd
 apk del -r shadow
 
@@ -27,12 +27,12 @@ chown 0:0 /var/empty
 # Extra stuff
 apk add mtd-utils-ubi
 apk add bottom
-apk add neofetch
+#apk add neofetch
 apk add e2fsprogs-extra
 
 # Install NTPD
-apk add openntpd
-rc-update add openntpd default
+#apk add openntpd
+#rc-update add openntpd default
 
 # Clear apk cache
 rm -rf /var/cache/apk/*
